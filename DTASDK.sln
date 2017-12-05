@@ -3,11 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{7875A32C-A06F-4FCC-9C23-6FC37F4979DE}"
-	ProjectSection(SolutionItems) = preProject
-		paket.dependencies = paket.dependencies
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTASDK", "DTASDK\DTASDK.csproj", "{F6FF9355-0FDB-4538-A103-14A06D3DFC3C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTASDKTests", "DTASDKTests\DTASDKTests.csproj", "{BBF6E6E6-9339-4643-B16F-F3353595C122}"
