@@ -165,7 +165,7 @@ namespace Amazon.DTASDK.V2.Tests
         [TestMethod]
         public void testSerializeSBS2Request()
         {
-            string SBS2JsonRequestBody = @"{""operation""SubscriptionActivate"",
+            string SBS2JsonRequestBody = @"{""operation"":""SubscriptionActivate"",
                                             ""subscriptionId"":""6f3092e5-0326-42b7-a107-416234d548d8"",
                                             ""productId"": ""subscriptionA"",
                                             ""userId"": ""12345""}";
@@ -173,7 +173,7 @@ namespace Amazon.DTASDK.V2.Tests
             Serializer serializer = new Serializer();
 
             SubscriptionActivateRequest request = serializer.Deserialize<SubscriptionActivateRequest>(SBS2JsonRequestBody);
-            Assert.AreEqual("SubscriptionActivate", request.Operation);
+            Assert.AreEqual(InstantAccessOperation.SubscriptionActivate, request.Operation);
             Assert.AreEqual("6f3092e5-0326-42b7-a107-416234d548d8", request.SubscriptionId);
             Assert.AreEqual("subscriptionA", request.ProductId);
             Assert.AreEqual("12345", request.UserId);
@@ -185,7 +185,7 @@ namespace Amazon.DTASDK.V2.Tests
         [TestMethod]
         public void testSerializeTeamSubsRequest()
         {
-            string SBS2JsonRequestBody = @"{""operation""SubscriptionActivate"",
+            string SBS2JsonRequestBody = @"{""operation"":""SubscriptionActivate"",
                                             ""subscriptionId"":""6f3092e5-0326-42b7-a107-416234d548d8"",
                                             ""productId"": ""subscriptionA"",
                                             ""userId"": ""12345"",
@@ -196,7 +196,7 @@ namespace Amazon.DTASDK.V2.Tests
             Serializer serializer = new Serializer();
 
             SubscriptionActivateRequest request = serializer.Deserialize<SubscriptionActivateRequest>(SBS2JsonRequestBody);
-            Assert.AreEqual("SubscriptionActivate", request.Operation);
+            Assert.AreEqual(InstantAccessOperation.SubscriptionActivate, request.Operation);
             Assert.AreEqual("6f3092e5-0326-42b7-a107-416234d548d8", request.SubscriptionId);
             Assert.AreEqual("subscriptionA", request.ProductId);
             Assert.AreEqual("12345", request.UserId);
