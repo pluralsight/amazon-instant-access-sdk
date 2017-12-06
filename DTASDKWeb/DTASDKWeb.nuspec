@@ -21,5 +21,7 @@
     </dependencies>
   </metadata>
   <files>
+    <file src="bin\Release\DTASDK.dll" target ="lib\net452"/>
+    <file src="bin\Release\DTASDKWeb.dll" target ="lib\net452"/>
   </files>
 </package>
