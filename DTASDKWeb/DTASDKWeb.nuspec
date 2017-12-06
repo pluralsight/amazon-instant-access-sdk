@@ -22,6 +22,8 @@
   </metadata>
   <files>
     <file src="bin\DTASDK.dll" target ="lib\net452"/>
+    <file src="bin\DTASDK.pdb" target ="lib\net452"/>
     <file src="bin\DTASDKWeb.dll" target ="lib\net452"/>
+    <file src="bin\DTASDKWeb.pdb" target ="lib\net452"/>
   </files>
 </package>
